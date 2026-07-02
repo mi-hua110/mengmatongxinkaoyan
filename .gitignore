@@ -1,0 +1,33 @@
+# Python
+*.py
+__pycache__/
+*.pyc
+
+# PDF
+*.pdf
+
+# Excel
+*.xlsx
+*.zip
+
+# Text data files
+pdf_full_text.txt
+verify.txt
+excel_data/
+
+# Screenshots / temp
+screenshots/
+tmp/
+clipboard-images/
+
+# Memory / workbuddy
+.workbuddy/memory/
+.workbuddy/plugins/
+.workbuddy/agents/
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+desktop.ini

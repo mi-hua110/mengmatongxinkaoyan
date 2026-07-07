@@ -1,8 +1,8 @@
-// 院校数据 - 从PDF自动生成
+// 院校数据
 const SCHOOLS_RAW = [
   {
     "school": "重庆邮电大学",
-    "location": "直辖市——重庆市",
+    "location": "重庆市",
     "level": "普通高校",
     "exam_subject": "801 信号与系统",
     "exam_code": "801",

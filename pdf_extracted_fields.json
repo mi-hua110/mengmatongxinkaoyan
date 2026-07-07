@@ -1,0 +1,602 @@
+[
+  {
+    "index": 1,
+    "pdf_name": "重庆邮电大学",
+    "exam_subject": "801 信号与系统",
+    "retake_subject": "1.3 复试科目及参考书目"
+  },
+  {
+    "index": 2,
+    "pdf_name": "安大”（AHU",
+    "exam_subject": "830 专业基础综合一（信号与系统、数字电路与逻辑设计）、827 信号",
+    "retake_subject": "1.3 复试科目及参考书目 图 3：26 安徽大学 830/827/841 复试科目"
+  },
+  {
+    "index": 3,
+    "pdf_name": "安工程",
+    "exam_subject": "813 信号与系统",
+    "retake_subject": "1.3 复试科目及参考书目 图 3：26 年安徽工程大学 813 复试科目表"
+  },
+  {
+    "index": 4,
+    "pdf_name": "北方工业大学",
+    "exam_subject": "871 信号与系统",
+    "retake_subject": "1.3 复试科目及参考书目 图 3：北方工业大学 871 复试科目"
+  },
+  {
+    "index": 5,
+    "pdf_name": "电科院(BESTI",
+    "exam_subject": "831 信号与系统",
+    "retake_subject": "1.3 复试科目及参考书目 图 3：北京电子科技学院 831 复试科目及参考书目"
+  },
+  {
+    "index": 6,
+    "pdf_name": "北工大（BJUT",
+    "exam_subject": "822 信号与系统",
+    "retake_subject": "1.3 复试科目及参考书目 图 3：北京工业大学 822 复试科目 图 4：北京工业大学 822 复试书目"
+  },
+  {
+    "index": 7,
+    "pdf_name": "北京化工大学",
+    "exam_subject": "843 信号与系统",
+    "retake_subject": "1.3 复试科目及参考书目 图 3：北京化工大学 843 复试科目及参考书目"
+  },
+  {
+    "index": 8,
+    "pdf_name": "北京理工大学",
+    "exam_subject": "",
+    "retake_subject": "1.3 复试科目及参考书目 图 5：北京理工大学 826 复试科目 图 6：北京理工大学 802 复试科目"
+  },
+  {
+    "index": 9,
+    "pdf_name": "信息科大（BISTU",
+    "exam_subject": "802 信号与系统",
+    "retake_subject": "1.3 复试科目及参考书目 图 3：26 年北京信息科技大学复试科目及其参考书目"
+  },
+  {
+    "index": 10,
+    "pdf_name": "北京邮电大学",
+    "exam_subject": "804 信号与系统",
+    "retake_subject": "1.3 复试科目及参考书目 图 3：北京邮电大学复试科目 北邮最后一次公布复试科目在 2019 年，之后不再进行笔试，也未公布复试科目。"
+  },
+  {
+    "index": 11,
+    "pdf_name": "成都理工大学",
+    "exam_subject": "826 信号与系统",
+    "retake_subject": "1.3 复试科目及参考书目 图 3：成都理工大学复试科目 图 4：成都理工大学复试参考书目"
+  },
+  {
+    "index": 12,
+    "pdf_name": "成都信息工程大学",
+    "exam_subject": "803 信号与系统",
+    "retake_subject": "1.3 复试科目及参考书目 图 3：成都信息工程大学复试科目 图 4：成都信息工程大学复试参考书目"
+  },
+  {
+    "index": 13,
+    "pdf_name": "大连海事大学",
+    "exam_subject": "807 信号与系统+电路",
+    "retake_subject": "1.3 复试科目及参考书目 图 4：复试参考书目 大连海事大学信息科学技术学院三个专业的复试科目都是通信原理（F06），参"
+  },
+  {
+    "index": 14,
+    "pdf_name": "大连交通大学",
+    "exam_subject": "806 信号与系统",
+    "retake_subject": "1.3 复试科目及参考书目 图 3：大连交通大学 806 复试科目 图 4：大连交通大学 806 复试参考书目"
+  },
+  {
+    "index": 15,
+    "pdf_name": "大连理工大学",
+    "exam_subject": "852 信号与系统",
+    "retake_subject": "1.3 复试科目及参考书目 图 3：大连理工大学复试科目"
+  },
+  {
+    "index": 16,
+    "pdf_name": "成电（UESTC",
+    "exam_subject": "",
+    "retake_subject": "1.3 复试科目及参考书目 图 4：26 年电子科技大学复试科目及其参考书目 成都电子科技大学 858/861 不同专业复试科目有所不同，但部分学院官方未指定"
+  },
+  {
+    "index": 17,
+    "pdf_name": "东北大学简称东大，位于辽宁沈阳，是教育部直属的全国重点大学",
+    "exam_subject": "841 通信专业基础",
+    "retake_subject": "1.3 复试科目及参考书目"
+  },
+  {
+    "index": 18,
+    "pdf_name": "为主的吉林省重点大学",
+    "exam_subject": "832 信号与系统",
+    "retake_subject": "1.3 复试科目及参考书目 图 2：东北电力大学复试科目"
+  },
+  {
+    "index": 19,
+    "pdf_name": "东北林大",
+    "exam_subject": "829 信号系统和数字电路",
+    "retake_subject": "1.3 复试科目及参考书目 图 4：复试参考书目"
+  },
+  {
+    "index": 20,
+    "pdf_name": "东油（NEPU",
+    "exam_subject": "818 信号与系统（一）和 823 信号与系统（二）",
+    "retake_subject": "1.3 复试科目及参考书目 图 3：26 年东北石油大学复试科目及其参考书目 东北石油大学 818 复试参考书目为："
+  },
+  {
+    "index": 21,
+    "pdf_name": "福州大学",
+    "exam_subject": "866 信号与系统",
+    "retake_subject": "1.3 复试科目及参考书目 图 3：26 年福州大学 866 复试科目及其参考书目"
+  },
+  {
+    "index": 22,
+    "pdf_name": "广西大学",
+    "exam_subject": "816 数字电路及信号与系统",
+    "retake_subject": "1.3 复试科目及参考书目 图 3：26 年广西大学复试科目及其参考书目 图 4：广西大学复试参考书目"
+  },
+  {
+    "index": 23,
+    "pdf_name": "广大（GU",
+    "exam_subject": "823 信号与系统",
+    "retake_subject": "1.3 复试科目及参考书目 图 3：广州大学 823 复试科目"
+  },
+  {
+    "index": 24,
+    "pdf_name": "贵大（GZU",
+    "exam_subject": "832 信号与系统",
+    "retake_subject": "1.3 复试科目及参考书目 图 3：26 年贵州大学复试科目及其参考书目 图 4：贵州大学复试参考书目"
+  },
+  {
+    "index": 25,
+    "pdf_name": "哈尔滨工程大学",
+    "exam_subject": "",
+    "retake_subject": "1.3 复试科目及参考书目 图 4：26 年哈尔滨工程大学复试科目及其参考书目"
+  },
+  {
+    "index": 26,
+    "pdf_name": "哈尔滨理工大学",
+    "exam_subject": "813 信号与系统",
+    "retake_subject": "1.3 复试科目及参考书目 图 3：哈尔滨理工大学 813 复试科目"
+  },
+  {
+    "index": 27,
+    "pdf_name": "杭州电子科技大学",
+    "exam_subject": "",
+    "retake_subject": "1.3 复试科目及参考书目 图 4：杭州电子科技大学复试科目 26 年杭电考信号与系统相关专业的复试科目要分学院看。030 通信工程学院 843"
+  },
+  {
+    "index": 28,
+    "pdf_name": "合肥工业大学",
+    "exam_subject": "833 信号分析与处理综合",
+    "retake_subject": "1.3 复试科目及参考书目 图 3：合肥工业大学 833 复试科目 图 4：合肥工业大学 833 复试参考书目"
+  },
+  {
+    "index": 29,
+    "pdf_name": "：HUE",
+    "exam_subject": "807 信号与系统",
+    "retake_subject": "1.3 复试科目及参考书目 图 3：26 年河北工程大学复试科目及其参考书目"
+  },
+  {
+    "index": 30,
+    "pdf_name": "河北科技大学",
+    "exam_subject": "822 信号与系统",
+    "retake_subject": "1.3 复试科目及参考书目 图 3：26 年河北科技大学复试科目及其参考书目"
+  },
+  {
+    "index": 31,
+    "pdf_name": "河海（HHU",
+    "exam_subject": "863 信号与系统",
+    "retake_subject": "1.3 复试科目及参考书目 图 3：河海大学复试科目 图 4：河海大学复试参考书目"
+  },
+  {
+    "index": 32,
+    "pdf_name": "河南工大（HAUT",
+    "exam_subject": "827 信号与系统",
+    "retake_subject": "1.3 复试科目及参考书目 图 3：26 年河南工业大学 827 复试科目"
+  },
+  {
+    "index": 33,
+    "pdf_name": "湖南大学",
+    "exam_subject": "828 信号与系统",
+    "retake_subject": "1.3 复试科目及参考书目 图 3：26 年湖南大学复试科目及其参考书目"
+  },
+  {
+    "index": 34,
+    "pdf_name": "湖南师大（HNNU",
+    "exam_subject": "898 信号与系统（原科目代码 997）",
+    "retake_subject": "1.3 复试科目及参考书目"
+  },
+  {
+    "index": 35,
+    "pdf_name": "华北电力大学",
+    "exam_subject": "832 信号与系统",
+    "retake_subject": "1.3 复试科目及参考书目 图 3：26 华北电力大学（保定）832 复试科目"
+  },
+  {
+    "index": 36,
+    "pdf_name": "华电（NCEPU",
+    "exam_subject": "813 信号与系统（北京本部）",
+    "retake_subject": "1.3 复试科目及参考书目 图 3：26 年华北电力大学 813 复试科目表 图 4：华北电力大学 813 复试参考书目"
+  },
+  {
+    "index": 37,
+    "pdf_name": "华北理工大学",
+    "exam_subject": "816 信号与系统",
+    "retake_subject": "1.3 复试科目及参考书目 图 2：华北理工大学复试科目"
+  },
+  {
+    "index": 38,
+    "pdf_name": "华东交大（ECJTU",
+    "exam_subject": "816 信号与系统",
+    "retake_subject": "1.3 复试科目及参考书目 图 3：26 年华东交通大学 816 复试科目及其参考书目 图 4：华东交通大学 816 复试参考书目"
+  },
+  {
+    "index": 39,
+    "pdf_name": "华东理工大学",
+    "exam_subject": "814 信号与系统（含数字信号处理）",
+    "retake_subject": "1.3 复试科目及参考书目 图 3：华东理工大学 814 复试科目"
+  },
+  {
+    "index": 40,
+    "pdf_name": "华南理工大学",
+    "exam_subject": "",
+    "retake_subject": "1.3 复试科目及参考书目"
+  },
+  {
+    "index": 41,
+    "pdf_name": "华南农业大学",
+    "exam_subject": "877 信号与系统",
+    "retake_subject": "1.3 复试科目及参考书目 图 3：26 年华南农业大学 877 复试科目表 华南农业大学人工智能与低空技术学院复试的专业面试科目为：电子技术基础 /"
+  },
+  {
+    "index": 42,
+    "pdf_name": "华科大",
+    "exam_subject": "824 信号与线性系统",
+    "retake_subject": "1.3 复试科目及参考书目 图 3：26 年华中科技大学复试科目及其参考书目"
+  },
+  {
+    "index": 43,
+    "pdf_name": "华中农业大学",
+    "exam_subject": "876 信号与系统",
+    "retake_subject": "1.3 复试科目及参考书目 图 4：华中农业大学 876 复试参考书目"
+  },
+  {
+    "index": 44,
+    "pdf_name": "华中师范大学",
+    "exam_subject": "838 信号与系统",
+    "retake_subject": "1.3 复试科目及参考书目 图 3：26 年华中师范大学复试科目"
+  },
+  {
+    "index": 45,
+    "pdf_name": "集美大学",
+    "exam_subject": "823 信号与系统",
+    "retake_subject": "1.3 复试科目及参考书目 图 3：26 年集美大学 823 复试科目表"
+  },
+  {
+    "index": 46,
+    "pdf_name": "南昌大学",
+    "exam_subject": "811 信号与系统",
+    "retake_subject": "1.3 复试科目及参考书目"
+  },
+  {
+    "index": 47,
+    "pdf_name": "南大（NJU",
+    "exam_subject": "851 信号与系统",
+    "retake_subject": "1.3 复试科目及参考书目 图 3：南京大学 851 复试科目及参考书目"
+  },
+  {
+    "index": 48,
+    "pdf_name": "南航（NUAA",
+    "exam_subject": "",
+    "retake_subject": "1.3 复试科目及参考书目 图 3：南京航空航天大学复试科目 图 4：南京航空航天大学复试参考书目"
+  },
+  {
+    "index": 49,
+    "pdf_name": "南京理工大学",
+    "exam_subject": "",
+    "retake_subject": "1.3 复试科目及参考书目 图 4：26 年南京理工大学复试科目及其参考书目 图 5：南京理工大学 818 复试参考书目"
+  },
+  {
+    "index": 50,
+    "pdf_name": "南京信息工程大学",
+    "exam_subject": "",
+    "retake_subject": "1.3 复试科目及参考书目 图 3：南京信息工程大学 811 复试科目 图 4：南京信息工程大学 811 复试参考书目"
+  },
+  {
+    "index": 51,
+    "pdf_name": "南开大学",
+    "exam_subject": "807 通信综合基础（含信号与系统）",
+    "retake_subject": "1.3 复试科目及参考书目 图 3：南开大学复试科目"
+  },
+  {
+    "index": 52,
+    "pdf_name": "内蒙古科技大学",
+    "exam_subject": "808 信号与系统",
+    "retake_subject": "1.3 复试科目及参考书目 图 3：内蒙古科技大学 808 复试科目"
+  },
+  {
+    "index": 53,
+    "pdf_name": "：宁大",
+    "exam_subject": "820 电路、信号与系统",
+    "retake_subject": "1.3 复试科目及参考书目 图 3：宁夏大学复试科目"
+  },
+  {
+    "index": 54,
+    "pdf_name": "三峡大学",
+    "exam_subject": "837 信号与系统",
+    "retake_subject": "1.3 复试科目及参考书目 图 3：三峡大学复试科目 图 4：三峡大学复试参考书目"
+  },
+  {
+    "index": 55,
+    "pdf_name": "三峡大学",
+    "exam_subject": "",
+    "retake_subject": "1.3 复试科目及参考书目 图 3：三峡大学复试科目 图 4：三峡大学复试参考书目"
+  },
+  {
+    "index": 56,
+    "pdf_name": "厦大（XMU",
+    "exam_subject": "",
+    "retake_subject": "1.3 复试科目及参考书目 图 3：厦门大学复试科目 图 4：厦门大学 847 复试参考书目"
+  },
+  {
+    "index": 57,
+    "pdf_name": "山大”（SDU",
+    "exam_subject": "833 信号与系统和数字信号处理",
+    "retake_subject": "1.3 复试科目及参考书目 图 3：26 年山东大学复试科目及其参考书目 图 4：山东大学复试参考书目"
+  },
+  {
+    "index": 58,
+    "pdf_name": "山东科技大学",
+    "exam_subject": "822 电路、信号与系统",
+    "retake_subject": "1.3 复试科目及参考书目 图 3：26 山东科技大学 822 复试科目"
+  },
+  {
+    "index": 59,
+    "pdf_name": "山西大学",
+    "exam_subject": "841 信号与系统",
+    "retake_subject": "1.3 复试科目及参考书目 图 4：26 年山西大学 841 复试科目表"
+  },
+  {
+    "index": 60,
+    "pdf_name": "上海交大",
+    "exam_subject": "819信号系统与信号处理。26年一共有三个",
+    "retake_subject": "1.3 复试科目及参考书目 上海交大集电路学院的复试科目需要笔试，笔试包含以下内容： 是电通、信通、电科复试只有选择题，实在不会也可以蒙。"
+  },
+  {
+    "index": 61,
+    "pdf_name": "深圳大学",
+    "exam_subject": "",
+    "retake_subject": ""
+  },
+  {
+    "index": 62,
+    "pdf_name": "沈阳工业大学",
+    "exam_subject": "807 信号与系统",
+    "retake_subject": "1.3 复试科目及参考书目 图 3：沈阳工业大学 807 复试科目及参考书目"
+  },
+  {
+    "index": 63,
+    "pdf_name": "沈航（SAU",
+    "exam_subject": "808 信号与系统",
+    "retake_subject": "1.3 复试科目及参考书目 图 3：沈阳航空航天大学复试科目 图 4：沈阳航空航天大学复试参考书"
+  },
+  {
+    "index": 64,
+    "pdf_name": "沈阳理工大学",
+    "exam_subject": "810 信号与系统",
+    "retake_subject": "1.3 复试科目及参考书目 图 4：810 复试参考书目"
+  },
+  {
+    "index": 65,
+    "pdf_name": "石家庄铁道大学",
+    "exam_subject": "894 信号与系统（原 911）",
+    "retake_subject": "1.3 复试科目及参考书目 图 3：26 年石家庄铁道大学复试科目及其参考书目"
+  },
+  {
+    "index": 66,
+    "pdf_name": "四川大学",
+    "exam_subject": "854 信号与系统",
+    "retake_subject": "1.3 复试科目及参考书目 图 3：四川大学 854 复试科目"
+  },
+  {
+    "index": 67,
+    "pdf_name": "苏州大学",
+    "exam_subject": "837 信号系统与数字逻辑 839 信号与线性系统",
+    "retake_subject": "1.3 复试科目及参考书目 图 3：苏州大学 837/839 复试科目及参考书目"
+  },
+  {
+    "index": 68,
+    "pdf_name": "太原科技大学",
+    "exam_subject": "826 信号与系统",
+    "retake_subject": "1.3 复试科目及参考书目 图 3：太原科技 826 复试科目"
+  },
+  {
+    "index": 69,
+    "pdf_name": "太原理工大学",
+    "exam_subject": "801 数字逻辑与信号系统",
+    "retake_subject": "1.3 复试科目及参考书目 图 3：26 年太原理工大学复试科目 太原理工大学 801 数字逻辑与信号系统复试较为特殊，根据考生报考研究方向，"
+  },
+  {
+    "index": 70,
+    "pdf_name": "天津大学",
+    "exam_subject": "",
+    "retake_subject": "1.3 复试科目及参考书目 图 3：天津大学 815 复试科目"
+  },
+  {
+    "index": 71,
+    "pdf_name": "天津工业大学",
+    "exam_subject": "",
+    "retake_subject": "1.3 复试科目及参考书目 图 3：26 年天津工业大学 812 复试科目表"
+  },
+  {
+    "index": 72,
+    "pdf_name": "天津科技大学",
+    "exam_subject": "822 信号与系统",
+    "retake_subject": "1.3 复试科目及参考书目 图 3：26 年天津科技大学 822 复试科目"
+  },
+  {
+    "index": 73,
+    "pdf_name": "天理”（TUT",
+    "exam_subject": "822 信号与系统",
+    "retake_subject": "1.3 复试科目及参考书目 图 3：26 年天津理工大学 822 复试科目 图 4：26 年天津理工大学 822 复试参考书目"
+  },
+  {
+    "index": 74,
+    "pdf_name": "武大（WHU",
+    "exam_subject": "",
+    "retake_subject": "1.3 复试科目及参考书目 图 3：26 武汉大学 807 复试科目"
+  },
+  {
+    "index": 75,
+    "pdf_name": "武汉工程大学",
+    "exam_subject": "834 信号与系统",
+    "retake_subject": "1.3 复试科目及参考书目 图 3：26 年武汉工程大学复试科目及其参考书目"
+  },
+  {
+    "index": 76,
+    "pdf_name": "武汉科技大学",
+    "exam_subject": "813 信号与系统",
+    "retake_subject": "1.3 复试科目及参考书目 图 3：武汉科技大学复试科目"
+  },
+  {
+    "index": 77,
+    "pdf_name": "武汉理工（WUT",
+    "exam_subject": "855 信号与系统",
+    "retake_subject": "1.3 复试科目及参考书目 图 3：武汉理工大学 855 复试科目及参考书目"
+  },
+  {
+    "index": 78,
+    "pdf_name": "西安电子科技大学",
+    "exam_subject": "844 信号与系统",
+    "retake_subject": "1.3 复试科目及参考书目 图 3：26 西安电子科技大学 844 复试科目"
+  },
+  {
+    "index": 79,
+    "pdf_name": "西工程大”（XPU",
+    "exam_subject": "812 信号与系统",
+    "retake_subject": "1.3 复试科目及参考书目 图 3：26 年西安工程大学复试科目及其参考书目 图 4：26 年西安工程大学复试参考书目"
+  },
+  {
+    "index": 80,
+    "pdf_name": "西安交通大学",
+    "exam_subject": "815 信号与系统（含数字信号处理）",
+    "retake_subject": "1.3 复试科目及参考书目 图 3：西安交通大学 815/869 复试科目及参考书目"
+  },
+  {
+    "index": 81,
+    "pdf_name": "西安理工大学",
+    "exam_subject": "810 信号与系统（二）/ 845 信号与线性系统",
+    "retake_subject": "1.3 复试科目及参考书目 图 3：西安理工大学复试参考书目 图 4：26 年西安理工大学 810/845 复试科目表"
+  },
+  {
+    "index": 82,
+    "pdf_name": "西安石油大学",
+    "exam_subject": "810 信号与系统",
+    "retake_subject": "1.3 复试科目及参考书目"
+  },
+  {
+    "index": 83,
+    "pdf_name": "",
+    "exam_subject": "824 信号与系统",
+    "retake_subject": "1.3 复试科目及参考书目 图 3：26 年西安邮电大学复试科目 图 4：26 年西安邮电大学复试参考书目"
+  },
+  {
+    "index": 84,
+    "pdf_name": "西南交通大学",
+    "exam_subject": "",
+    "retake_subject": "1.3 复试科目及参考书目 图 3：西南交通大学 824 复试科目及参考书目 西南交通大学 824 的复试方案如下，需要注意的是，每个专业的复试参考书目不"
+  },
+  {
+    "index": 85,
+    "pdf_name": "",
+    "exam_subject": "835 信号与系统",
+    "retake_subject": "1.3 复试科目及参考书目 图 2：26 年湘潭大学 835 复试科目表"
+  },
+  {
+    "index": 86,
+    "pdf_name": "新疆大学",
+    "exam_subject": "827 信号与系统",
+    "retake_subject": "1.3 复试科目及参考书目 图 3：新疆大学 827 复试科目 图 4：827 复试参考书目"
+  },
+  {
+    "index": 87,
+    "pdf_name": "为燕大（YSU",
+    "exam_subject": "808 信号与系统",
+    "retake_subject": "1.3 复试科目及参考书目"
+  },
+  {
+    "index": 88,
+    "pdf_name": "长安大学",
+    "exam_subject": "814 信号与系统",
+    "retake_subject": "1.3 复试科目及参考书目 图 3：长安大学复试科目"
+  },
+  {
+    "index": 89,
+    "pdf_name": "长春工业大学",
+    "exam_subject": "807 信号与系统",
+    "retake_subject": "1.3 复试科目及参考书目 图 3：长春工业大学 807 复试科目"
+  },
+  {
+    "index": 90,
+    "pdf_name": "长春理工大学",
+    "exam_subject": "808 信号与系统",
+    "retake_subject": "1.3 复试科目及参考书目 图 3：26 年长春理工大学复试科目及其参考书目"
+  },
+  {
+    "index": 91,
+    "pdf_name": "长沙理工（CSUST",
+    "exam_subject": "832 信号与系统（B）",
+    "retake_subject": "1.3 复试科目及参考书目 图 3：长沙理工大学复试科目"
+  },
+  {
+    "index": 92,
+    "pdf_name": "浙商大”（ZJSU",
+    "exam_subject": "822 信号与系统",
+    "retake_subject": "1.3 复试科目及参考书目 图 3：26 年浙江工商大学复试科目及其参考书目"
+  },
+  {
+    "index": 93,
+    "pdf_name": "中国地质大学",
+    "exam_subject": "845 信号与系统",
+    "retake_subject": "1.3 复试科目及参考书目 图 3：中国地质大学（北京）845 复试科目及参考书目"
+  },
+  {
+    "index": 94,
+    "pdf_name": "中国地质大学",
+    "exam_subject": "894 电路、信号与系统",
+    "retake_subject": "1.3 复试科目及参考书目 图 4：中国地质大学（武汉）894 复试科目及参考书目 学院公示显示，复试笔试为电类综合，内容包含数电、C 语言和英语。"
+  },
+  {
+    "index": 95,
+    "pdf_name": "中国海洋大学",
+    "exam_subject": "819 信号与系统综合",
+    "retake_subject": "1.3 复试科目及参考书目 图 3：中国海洋大学 819 复试科目"
+  },
+  {
+    "index": 96,
+    "pdf_name": "中国科学技术大学",
+    "exam_subject": "",
+    "retake_subject": "1.3 复试科目及参考书目 图 3：中国科学技术大学 843 复试科目 图 4：中国科学技术大学 843 复试参考书目"
+  },
+  {
+    "index": 97,
+    "pdf_name": "中国矿业大学",
+    "exam_subject": "824 专业基础综合",
+    "retake_subject": ""
+  },
+  {
+    "index": 98,
+    "pdf_name": "中国民航大学",
+    "exam_subject": "806 信号与系统",
+    "retake_subject": "1.3 复试科目及参考书目 图 3：26 年中国民航大学复试科目及其参考书目"
+  },
+  {
+    "index": 99,
+    "pdf_name": "中石大（CUP",
+    "exam_subject": "853 信号分析与系统",
+    "retake_subject": "1.3 复试科目及参考书目 图 3：26 年中国石油大学（北京）复试科目及其参考书目"
+  },
+  {
+    "index": 100,
+    "pdf_name": "中山大学",
+    "exam_subject": "",
+    "retake_subject": "1.3 复试科目及参考书目 图 3：中山大学 884 复试科目及参考书目"
+  }
+]

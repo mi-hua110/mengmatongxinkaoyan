@@ -47,7 +47,7 @@ const SCHOOLS_RAW = [
   },
   {
     "school": "北京工业大学",
-    "location": "中国北京市",
+    "location": "北京市朝阳区",
     "level": "211高校",
     "exam_subject": "822 信号与系统",
     "exam_code": "822",
@@ -146,7 +146,7 @@ const SCHOOLS_RAW = [
   },
   {
     "school": "东北大学",
-    "location": "辽宁沈阳",
+    "location": "辽宁省沈阳市",
     "level": "985高校",
     "exam_subject": "841 通信专业基础",
     "exam_code": "211",
@@ -227,7 +227,7 @@ const SCHOOLS_RAW = [
   },
   {
     "school": "哈尔滨理工大学",
-    "location": "哈尔滨市",
+    "location": "黑龙江省哈尔滨市",
     "level": "普通高校",
     "exam_subject": "813 信号与系统",
     "exam_code": "995",
@@ -416,7 +416,7 @@ const SCHOOLS_RAW = [
   },
   {
     "school": "南京理工大学",
-    "location": "南京市",
+    "location": "江苏省南京市",
     "level": "211高校",
     "exam_subject": "818 信号与系统+数字电路、891 信号与系统+电磁波",
     "exam_code": "818",
@@ -686,7 +686,7 @@ const SCHOOLS_RAW = [
   },
   {
     "school": "西安理工大学",
-    "location": "西安市",
+    "location": "陕西省西安市",
     "level": "普通高校",
     "exam_subject": "810 信号与系统（二）/ 845 信号与线性系统",
     "exam_code": "845",
@@ -721,8 +721,8 @@ const SCHOOLS_RAW = [
     "_retake_subject": "1.3 复试科目及参考书目"
   },
   {
-    "school": "湘潭大学简称",
-    "location": "湖南湘潭",
+    "school": "湘潭大学",
+    "location": "湖南省湘潭市",
     "level": "双一流",
     "exam_subject": "835 信号与系统",
     "exam_code": "835",
@@ -731,7 +731,7 @@ const SCHOOLS_RAW = [
   },
   {
     "school": "新疆大学",
-    "location": "乌鲁木齐市",
+    "location": "新疆维吾尔自治区乌鲁木齐市",
     "level": "211高校",
     "exam_subject": "827 信号与系统",
     "exam_code": "827",
@@ -848,7 +848,7 @@ const SCHOOLS_RAW = [
   },
   {
     "school": "中国石油大学",
-    "location": "",
+    "location": "山东省青岛市",
     "level": "211高校",
     "exam_subject": "853 信号分析与系统",
     "exam_code": "853",

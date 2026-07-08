@@ -582,7 +582,7 @@ function filterSchools() {
         ${s.scoreLine ? `<span>复试线${s.scoreLine}</span>` : ''}
         ${s.planCount ? `<span>招${s.planCount}人</span>` : ''}
       </div>
-      ${s.examSubject ? `<div class="school-card-subject">${s.examCode ? s.examCode + ' ' : ''}${s.examSubject}</div>` : ''}
+      ${s.examSubject ? `<div class="school-card-subject">${s.examSubject}</div>` : ''}
     </div>`;
   }).join('');
 }

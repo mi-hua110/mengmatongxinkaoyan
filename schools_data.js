@@ -109,7 +109,7 @@ const SCHOOLS_RAW = [
     "_retake_subject": "1.3 复试科目及参考书目 图 3：成都信息工程大学复试科目 图 4：成都信息工程大学复试参考书目"
   },
   {
-    "school": "大连海事大学信息科学技术学院",
+    "school": "大连海事大学",
     "location": "辽宁省大连市",
     "level": "211高校",
     "exam_subject": "807 信号与系统+电路",
@@ -307,8 +307,8 @@ const SCHOOLS_RAW = [
     "_retake_subject": "1.3 复试科目及参考书目"
   },
   {
-    "school": "华北理工大学初试科目",
-    "location": "河北省唐山市曹妃甸新城渤海大道 21 号",
+    "school": "华北理工大学",
+    "location": "河北省唐山市",
     "level": "普通高校",
     "exam_subject": "816 信号与系统",
     "exam_code": "816",

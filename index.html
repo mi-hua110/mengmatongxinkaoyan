@@ -372,7 +372,9 @@ function buildAllSchools() {
       scoreMin: detail.score_min,
       scoreMax: detail.score_max,
       scoreAvg: detail.score_avg,
-      planCount: detail.plan_count,
+      planCount: detail.planned_total,
+      actualCount: detail.actual_total,
+      retakePeople: detail.retake_people_total,
       subjectRating: detail.subject_rating,
       retakeSubjects: detail.retake_subjects,
     });
@@ -386,7 +388,8 @@ function buildAllSchools() {
       name: name, province: '', level: mapLevel(d.school_level || ''),
       examSubject: d.exam_name || '', examCode: d.exam_code || '',
       preview: '', scoreLine: d.score_line, scoreMin: d.score_min,
-      scoreMax: d.score_max, scoreAvg: d.score_avg, planCount: d.plan_count,
+      scoreMax: d.score_max, scoreAvg: d.score_avg, planCount: d.planned_total,
+      actualCount: d.actual_total, retakePeople: d.retake_people_total,
       subjectRating: d.subject_rating, retakeSubjects: d.retake_subjects,
     });
   });
@@ -877,7 +880,8 @@ function renderDetailInfo(school) {
     ['考试科目', school.examSubject || '--'],
     ['复试科目', school.retakeSubjects ? (school.retakeSubjects.length > 60 ? school.retakeSubjects.substring(0,60) + '... <span style="color:var(--blue);cursor:pointer" onclick="switchDTab(\'college\',document.querySelector(\'.d-tab[data-dtab=college]\'))">查看详情</span>' : school.retakeSubjects) : '--'],
     ['复试线', school.scoreLine ? school.scoreLine+' 分' : '--'],
-    ['拟招人数', school.planCount ? school.planCount+' 人' : '--'],
+    ['拟招/实招', school.planCount && school.actualCount ? `${school.planCount}人 / ${school.actualCount}人` : (school.planCount ? school.planCount+' 人' : (school.actualCount ? school.actualCount+' 人' : '--'))],
+    ['复试人数', school.retakePeople ? school.retakePeople+' 人' : '--'],
     ['录取最低分', school.scoreMin ? school.scoreMin+' 分' : '--'],
     ['录取最高分', school.scoreMax ? school.scoreMax+' 分' : '--'],
     ['录取平均分', school.scoreAvg ? school.scoreAvg.toFixed(1)+' 分' : '--'],
@@ -934,16 +938,20 @@ function renderDetailCollege(school) {
 
     // Major table
     html += '<table class="info-table" style="margin-top:4px"><thead><tr>' +
-      '<th style="width:35%">专业</th><th>平均分</th><th>最高分</th><th>最低分</th><th>复试科目</th>' +
+      '<th style="width:22%">专业</th><th>复试线</th><th>平均分</th><th>最高分</th><th>最低分</th><th style="width:10%">拟招/实招</th><th>复试人数</th><th>复录比</th>' +
       '</tr></thead><tbody>';
     col.majors.forEach(m => {
-      const retake = m.retake_content ? m.retake_content.split('\n')[0].trim() : '--';
+      const planActual = (m.planned||m.actual) ? `${m.planned||'-'}/${m.actual||'-'}` : '--';
+      const lineColor = m.score_line && m.score_line > 300 ? 'color:#dc2626;font-weight:700' : '';
       html += `<tr>` +
         `<td style="font-size:12px">${m.name}</td>` +
-        `<td><strong style="color:var(--blue)">${m.avg!==null?m.avg:'--'}</strong></td>` +
-        `<td>${m.max!==null?m.max:'--'}</td>` +
-        `<td>${m.min!==null?m.min:'--'}</td>` +
-        `<td style="font-size:11px;color:var(--g7);max-width:200px;white-space:normal;word-break:break-all">${retake}</td>` +
+        `<td style="${lineColor};text-align:center">${m.score_line||'--'}</td>` +
+        `<td style="text-align:center"><strong style="color:var(--blue)">${m.avg!==null?m.avg:'--'}</strong></td>` +
+        `<td style="text-align:center">${m.max!==null?m.max:'--'}</td>` +
+        `<td style="text-align:center">${m.min!==null?m.min:'--'}</td>` +
+        `<td style="text-align:center;font-size:12px">${planActual}</td>` +
+        `<td style="text-align:center">${m.retake_count||'--'}</td>` +
+        `<td style="text-align:center">${m.ratio||'--'}</td>` +
         `</tr>`;
     });
     html += '</tbody></table>';

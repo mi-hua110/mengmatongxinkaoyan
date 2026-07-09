@@ -485,8 +485,8 @@ function navSpy() {
 function renderHotSchools() {
   // Pick schools with most difficulty records + score data
   const hot = allSchools
-    .filter(s => s.scoreLine || s.scoreAvg || s.planCount)
-    .sort((a,b) => (b.planCount||0) - (a.planCount||0))
+    .filter(s => s.scoreLine || s.scoreAvg || s.actualCount)
+    .sort((a,b) => (b.actualCount||0) - (a.actualCount||0))
     .slice(0, 8);
   
   const colors = ['c1','c2','c3','c4','c1','c2','c3','c4'];
@@ -495,9 +495,8 @@ function renderHotSchools() {
       <div class="hot-card-name">${s.name}</div>
       <div class="hot-card-level">${s.level}</div>
       <div class="hot-card-stats">
-        <span>拟招 ${s.planCount||'-'}/${s.actualCount||'-'}人</span>
         <span>录取均分 ${s.scoreAvg ? s.scoreAvg.toFixed(1) : '-'}</span>
-        <span>招生 ${s.planCount||'-'}人</span>
+        <span>实招 ${s.actualCount||'-'}人</span>
       </div>
     </div>
   `).join('');
@@ -590,8 +589,7 @@ function filterSchools() {
       <div class="school-card-meta">
         <span>${s.level}</span>
         <span>${s.province}</span>
-        ${s.planCount && s.actualCount ? `<span>拟招${s.planCount}/${s.actualCount}</span>` : (s.planCount ? `<span>拟招${s.planCount}</span>` : '')}
-        ${s.planCount ? `<span>招${s.planCount}人</span>` : ''}
+        ${s.actualCount ? `<span>实招${s.actualCount}人</span>` : ''}
       </div>
       ${s.examSubject ? `<div class="school-card-subject">${s.examSubject}</div>` : ''}
     </div>`;

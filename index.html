@@ -397,6 +397,11 @@ function buildAllSchools() {
 }
 
 function extractProvince(loc) {
+  if (!loc) return '';
+  if (loc.includes('广西壮族自治区')) return '广西省';
+  if (loc.includes('内蒙古自治区')) return '内蒙古自治区';
+  if (loc.includes('宁夏回族自治区')) return '宁夏回族自治区';
+  if (loc.includes('新疆维吾尔自治区')) return '新疆维吾尔自治区';
   const m = loc.match(/(\S+?)[省市]/);
   return m ? m[0] : (loc.substring(0, 6) || '');
 }
@@ -749,10 +754,9 @@ function switchDTab(tab, el) {
 
 function renderDetailScore(school) {
   const sl = school.scoreLine, smin = school.scoreMin, smax = school.scoreMax, savg = school.scoreAvg;
-  const hasScores = sl || smin || smax || savg;
+  const hasScores = smin || smax || savg;
   
   let html = '<div class="score-cards">'+
-    `<div class="score-card"><div class="score-card-val ${sl&&sl>300?'high':'ok'}">${sl||'--'}</div><div class="score-card-label">复试线</div></div>`+
     `<div class="score-card"><div class="score-card-val mid">${smin||'--'}</div><div class="score-card-label">录取最低分</div></div>`+
     `<div class="score-card"><div class="score-card-val high">${smax||'--'}</div><div class="score-card-label">录取最高分</div></div>`+
     `<div class="score-card"><div class="score-card-val ok">${savg?savg.toFixed(1):'--'}</div><div class="score-card-label">录取平均分</div></div>`+
@@ -760,9 +764,8 @@ function renderDetailScore(school) {
   
   // Score visualization
   if (hasScores) {
-    const maxVal = Math.max(smax||0, savg||0, sl||0, 100);
+    const maxVal = Math.max(smax||0, savg||0, 100);
     const bars = [
-      {label:'复试线',val:sl||0,color:'#3b82f6'},
       {label:'最低分',val:smin||0,color:'#f59e0b'},
       {label:'最高分',val:smax||0,color:'#dc2626'},
       {label:'平均分',val:savg||0,color:'#16a34a'}
@@ -879,7 +882,6 @@ function renderDetailInfo(school) {
     ['学科评级', school.subjectRating || '--'],
     ['考试科目', school.examSubject || '--'],
     ['复试科目', school.retakeSubjects ? (school.retakeSubjects.length > 60 ? school.retakeSubjects.substring(0,60) + '... <span style="color:var(--blue);cursor:pointer" onclick="switchDTab(\'college\',document.querySelector(\'.d-tab[data-dtab=college]\'))">查看详情</span>' : school.retakeSubjects) : '--'],
-    ['复试线', school.scoreLine ? school.scoreLine+' 分' : '--'],
     ['拟招/实招', school.planCount && school.actualCount ? `${school.planCount}人 / ${school.actualCount}人` : (school.planCount ? school.planCount+' 人' : (school.actualCount ? school.actualCount+' 人' : '--'))],
     ['复试人数', school.retakePeople ? school.retakePeople+' 人' : '--'],
     ['录取最低分', school.scoreMin ? school.scoreMin+' 分' : '--'],

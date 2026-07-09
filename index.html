@@ -896,7 +896,43 @@ function renderDetailInfo(school) {
     info.map(([k,v]) => `<tr><td>${k}</td><td>${v}</td></tr>`).join('')+
     '</tbody></table>';
   
-  if (school.preview) {
+  // 复试内容表格（Excel格式）
+  const cdata = (typeof COLLEGE_DATA !== 'undefined') ? COLLEGE_DATA[school.name] : null;
+  if (cdata && cdata.colleges && cdata.colleges.length > 0) {
+    const esc = (s) => s ? String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;') : '';
+    html += `<div style="background:white;border:1px solid var(--g3);border-radius:12px;padding:20px;margin-top:16px">
+      <div style="font-size:14px;font-weight:800;margin-bottom:12px;display:flex;align-items:center;gap:6px"><i class="fas fa-file-alt" style="color:var(--blue)"></i> 复试内容</div>
+      <div style="overflow-x:auto">
+        <table style="width:100%;border-collapse:collapse;font-size:12px">
+          <thead>
+            <tr style="background:var(--blue-light)">
+              <th style="padding:8px 10px;border:1px solid var(--g3);text-align:left;white-space:nowrap">学院</th>
+              <th style="padding:8px 10px;border:1px solid var(--g3);text-align:left;min-width:140px">专业</th>
+              <th style="padding:8px 10px;border:1px solid var(--g3);text-align:center">平均分</th>
+              <th style="padding:8px 10px;border:1px solid var(--g3);text-align:center">最高分</th>
+              <th style="padding:8px 10px;border:1px solid var(--g3);text-align:center">最低分</th>
+              <th style="padding:8px 10px;border:1px solid var(--g3);text-align:center">科目代码</th>
+              <th style="padding:8px 10px;border:1px solid var(--g3);text-align:left;min-width:200px">复试内容</th>
+            </tr>
+          </thead>
+          <tbody>`;
+    cdata.colleges.forEach(col => {
+      col.majors.forEach((m, mi) => {
+        html += `<tr>
+          <td style="padding:8px 10px;border:1px solid var(--g3);vertical-align:top;white-space:nowrap">${mi===0?esc(col.name):''}</td>
+          <td style="padding:8px 10px;border:1px solid var(--g3);vertical-align:top">${esc(m.name)}</td>
+          <td style="padding:8px 10px;border:1px solid var(--g3);text-align:center;font-weight:600;color:var(--blue)">${m.avg!==null?m.avg:'--'}</td>
+          <td style="padding:8px 10px;border:1px solid var(--g3);text-align:center">${m.max!==null?m.max:'--'}</td>
+          <td style="padding:8px 10px;border:1px solid var(--g3);text-align:center">${m.min!==null?m.min:'--'}</td>
+          <td style="padding:8px 10px;border:1px solid var(--g3);text-align:center">${m.retake_code!==null?m.retake_code:'--'}</td>
+          <td style="padding:8px 10px;border:1px solid var(--g3);vertical-align:top;white-space:pre-wrap;word-break:break-word;max-width:350px;max-height:200px;overflow-y:auto;display:block">${m.retake_content?esc(m.retake_content):'--'}</td>
+        </tr>`;
+      });
+    });
+    html += `</tbody></table>
+      </div>
+    </div>`;
+  } else if (school.preview) {
     html += `<div style="background:white;border:1px solid var(--g3);border-radius:12px;padding:20px;margin-top:16px">
       <div style="font-size:14px;font-weight:800;margin-bottom:12px">宝典原文摘录</div>
       <div style="font-size:13px;line-height:1.8;color:var(--g7);background:var(--g0);padding:16px;border-radius:8px;max-height:280px;overflow-y:auto;white-space:pre-wrap">${school.preview.substring(0,1200)}</div>

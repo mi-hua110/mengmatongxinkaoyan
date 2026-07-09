@@ -11,6 +11,7 @@
 <script src="school_details.js"></script>
 <script src="highlight_data.js"></script>
 <script src="qq_group_data.js"></script>
+<script src="college_data.js"></script>
 <style>
 :root {
   --blue: #1a56db; --blue-dark: #1e40af; --blue-light: #eff6ff;
@@ -335,12 +336,14 @@ a { color: var(--blue); text-decoration: none; }
       <button class="d-tab" data-dtab="diff" onclick="switchDTab('diff',this)">📊 难度分析</button>
       <button class="d-tab" data-dtab="tips" onclick="switchDTab('tips',this)">⭐ 重点勾画</button>
       <button class="d-tab" data-dtab="info" onclick="switchDTab('info',this)">ℹ️ 基本信息</button>
+      <button class="d-tab" data-dtab="college" onclick="switchDTab('college',this)">🎓 学院数据</button>
     </div>
     <div class="d-body">
       <div class="d-content active" id="dc-score"></div>
       <div class="d-content" id="dc-diff"></div>
       <div class="d-content" id="dc-tips"></div>
       <div class="d-content" id="dc-info"></div>
+      <div class="d-content" id="dc-college"></div>
     </div>
   </div>
 </div>
@@ -723,6 +726,7 @@ function openDetail(schoolName) {
   renderDetailDiff(school);
   renderDetailTips(school);
   renderDetailInfo(school);
+  renderDetailCollege(school);
   
   document.getElementById('detailOverlay').classList.add('open');
   document.body.style.overflow = 'hidden';
@@ -871,7 +875,7 @@ function renderDetailInfo(school) {
     ['院校层次', school.level || '--'],
     ['学科评级', school.subjectRating || '--'],
     ['考试科目', school.examSubject || '--'],
-    ['复试科目', school.retakeSubjects || '--'],
+    ['复试科目', school.retakeSubjects ? (school.retakeSubjects.length > 60 ? school.retakeSubjects.substring(0,60) + '... <span style="color:var(--blue);cursor:pointer" onclick="switchDTab(\'college\',document.querySelector(\'.d-tab[data-dtab=college]\'))">查看详情</span>' : school.retakeSubjects) : '--'],
     ['复试线', school.scoreLine ? school.scoreLine+' 分' : '--'],
     ['拟招人数', school.planCount ? school.planCount+' 人' : '--'],
     ['录取最低分', school.scoreMin ? school.scoreMin+' 分' : '--'],
@@ -900,6 +904,57 @@ function renderDetailInfo(school) {
   }
   
   document.getElementById('dc-info').innerHTML = html;
+}
+
+function renderDetailCollege(school) {
+  const data = (typeof COLLEGE_DATA !== 'undefined') ? COLLEGE_DATA[school.name] : null;
+  if (!data || !data.colleges || data.colleges.length === 0) {
+    document.getElementById('dc-college').innerHTML = '<div style="text-align:center;padding:40px;color:var(--g5)"><i class="fas fa-university" style="font-size:36px;color:var(--g3);display:block;margin-bottom:12px"></i>暂无分学院数据</div>';
+    return;
+  }
+
+  let html = '';
+
+  // Summary card
+  const s = data.summary;
+  if (s.avg || s.max || s.min) {
+    html += '<div class="score-cards" style="margin-bottom:16px">' +
+      `<div class="score-card"><div class="score-card-val high">${s.max||'--'}</div><div class="score-card-label">录取最高分</div></div>`+
+      `<div class="score-card"><div class="score-card-val ok">${s.avg?s.avg.toFixed(1):'--'}</div><div class="score-card-label">录取平均分</div></div>`+
+      `<div class="score-card"><div class="score-card-val mid">${s.min||'--'}</div><div class="score-card-label">录取最低分</div></div>`+
+      '</div>';
+  }
+
+  // College breakdown
+  data.colleges.forEach((col, ci) => {
+    const isLast = (ci === data.colleges.length - 1);
+    html += `<div style="background:white;border:1px solid var(--g3);border-radius:12px;padding:16px;margin-bottom:12px${isLast?'':';border-bottom:2px solid var(--blue)'}">`;
+    html += `<div style="font-size:15px;font-weight:800;color:var(--blue-dark);margin-bottom:8px;display:flex;align-items:center;gap:6px"><i class="fas fa-building" style="color:var(--blue)"></i> ${col.name}</div>`;
+
+    // Retake subjects for this college
+    if (col.retake_subjects) {
+      html += `<div style="font-size:12px;color:var(--g5);background:var(--g0);padding:8px 12px;border-radius:6px;margin-bottom:10px"><strong>复试科目：</strong>${col.retake_subjects}</div>`;
+    }
+
+    // Major table
+    html += '<table class="info-table" style="margin-top:4px"><thead><tr>' +
+      '<th style="width:35%">专业</th><th>平均分</th><th>最高分</th><th>最低分</th><th>复试科目</th>' +
+      '</tr></thead><tbody>';
+    col.majors.forEach(m => {
+      const retake = m.retake_content ? m.retake_content.split('\n')[0].trim() : '--';
+      html += `<tr>` +
+        `<td style="font-size:12px">${m.name}</td>` +
+        `<td><strong style="color:var(--blue)">${m.avg!==null?m.avg:'--'}</strong></td>` +
+        `<td>${m.max!==null?m.max:'--'}</td>` +
+        `<td>${m.min!==null?m.min:'--'}</td>` +
+        `<td style="font-size:11px;color:var(--g7);max-width:200px;white-space:normal;word-break:break-all">${retake}</td>` +
+        `</tr>`;
+    });
+    html += '</tbody></table>';
+    html += '</div>';
+  });
+
+  document.getElementById('dc-college').innerHTML = html;
 }
 
 // QQ群查询弹窗

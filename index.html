@@ -321,7 +321,7 @@ a { color: var(--blue); text-decoration: none; }
       <div class="footer-col-links"><a href="#">关于小马哥</a><a href="#">数据来源</a><a href="#">更新日志</a></div>
     </div>
   </div>
-  <div class="footer-bar">© 2026 通信考研小马哥 · 所有数据仅供参考，请以官方发布为准 · 联系方式：QQ群 1102807614 | 公众号 通信考研小马哥</div>
+  <div class="footer-bar">© 2026-2027 通信考研小马哥 · 所有数据仅供参考，请以官方发布为准 · 联系方式：QQ群 1102807614 | 公众号 通信考研小马哥</div>
 </div>
 
 <!-- Detail overlay -->
@@ -490,7 +490,7 @@ function renderHotSchools() {
       <div class="hot-card-name">${s.name}</div>
       <div class="hot-card-level">${s.level}</div>
       <div class="hot-card-stats">
-        <span>复试线 ${s.scoreLine||'-'}分</span>
+        <span>拟招 ${s.planCount||'-'}/${s.actualCount||'-'}人</span>
         <span>录取均分 ${s.scoreAvg ? s.scoreAvg.toFixed(1) : '-'}</span>
         <span>招生 ${s.planCount||'-'}人</span>
       </div>
@@ -585,7 +585,7 @@ function filterSchools() {
       <div class="school-card-meta">
         <span>${s.level}</span>
         <span>${s.province}</span>
-        ${s.scoreLine ? `<span>复试线${s.scoreLine}</span>` : ''}
+        ${s.planCount && s.actualCount ? `<span>拟招${s.planCount}/${s.actualCount}</span>` : (s.planCount ? `<span>拟招${s.planCount}</span>` : '')}
         ${s.planCount ? `<span>招${s.planCount}人</span>` : ''}
       </div>
       ${s.examSubject ? `<div class="school-card-subject">${s.examSubject}</div>` : ''}

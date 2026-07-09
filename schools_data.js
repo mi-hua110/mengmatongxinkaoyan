@@ -847,8 +847,8 @@ const SCHOOLS_RAW = [
     "_retake_subject": "1.3 复试科目及参考书目"
   },
   {
-    "school": "中国石油大学",
-    "location": "山东省青岛市",
+    "school": "中国石油大学（北京）",
+    "location": "北京市",
     "level": "211高校",
     "exam_subject": "853 信号分析与系统",
     "exam_code": "853",
